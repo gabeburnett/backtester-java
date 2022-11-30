@@ -7,5 +7,5 @@ API for creating an algorithm with Backtester in Java.
 ## Installation
 Add the following Maven dependency to your project's `pom.xml`:
 ```
-todo!
+todo!!
 ```
