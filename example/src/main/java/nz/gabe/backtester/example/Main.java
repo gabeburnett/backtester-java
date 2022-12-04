@@ -9,11 +9,7 @@ public class Main {
         if (args.length != 2)
             throw new InvalidParameterException("Invalid arguments. Expected two arguments, 'host bot-id'.");
 
-        long botId = Long.parseLong(args[1].trim());
-        String wsUrl = args[0].trim();
-        System.out.printf("[Bot %d]: Connecting to %s%n", botId, wsUrl);
-
-        ExampleAlgorithm algo = new ExampleAlgorithm(URI.create(wsUrl), botId);
+        ExampleAlgorithm algo = new ExampleAlgorithm(URI.create(args[0]), Long.parseLong(args[1]));
         algo.start();
     }
 }
